@@ -374,7 +374,7 @@ class _AlphabetListScrollViewState extends State<AlphabetListScrollView> {
                 ),
               ),
             ),
-          _AlphabetListScollView(
+          _AlphabetListScrollView(
             insideKey: _sideKey,
             specialHeader: widget.headerWidgetList.isNotEmpty,
             specialList: specialList,
@@ -396,8 +396,8 @@ class _AlphabetListScrollViewState extends State<AlphabetListScrollView> {
 typedef AlphabetCallback = Function(int, String);
 typedef DoubleCallback = Function(double);
 
-class _AlphabetListScollView extends StatefulWidget {
-  const _AlphabetListScollView({
+class _AlphabetListScrollView extends StatefulWidget {
+  const _AlphabetListScrollView({
     Key key,
     this.callback,
     this.strList,
@@ -425,10 +425,10 @@ class _AlphabetListScollView extends StatefulWidget {
   final bool keyboardUsage;
 
   @override
-  _AlphabetListScollViewState createState() => _AlphabetListScollViewState();
+  _AlphabetListScrollViewState createState() => _AlphabetListScrollViewState();
 }
 
-class _AlphabetListScollViewState extends State<_AlphabetListScollView> {
+class _AlphabetListScrollViewState extends State<_AlphabetListScrollView> {
   int savedIndex = 0;
   double alphabetHeight = 0;
   Map<String, int> strMap = <String, int>{};
