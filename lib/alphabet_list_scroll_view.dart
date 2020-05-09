@@ -272,7 +272,7 @@ class _AlphabetListScrollViewState extends State<AlphabetListScrollView> {
 
   Future<void> _select(int index) async {
     if (await Vibration.hasVibrator()) {
-      Vibration.vibrate(duration: 20);
+      Vibration.vibrate(duration: 2);
     }
     final double height = heightMap[alphabetList[index]];
     controller.jumpTo(height);
